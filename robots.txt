@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xxxilusha.github.io/nexora-site/sitemap.xml
