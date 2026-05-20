@@ -134,6 +134,16 @@ em{font-style:normal;color:var(--accent2)}
 .price-card__list li{padding:10px 0;font-size:.88rem;color:var(--text2);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
 .price-card__list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0}
 
+/* ---------- WHY US ---------- */
+.why{padding:120px 0}
+.why__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:32px 24px;text-align:center;transition:all .4s var(--ease)}
+.why-card:hover{border-color:var(--border-h);transform:translateY(-4px)}
+.why-card__icon{width:52px;height:52px;margin:0 auto 20px;border-radius:14px;background:var(--accent-glow);border:1px solid #6d5aff18;display:flex;align-items:center;justify-content:center}
+.why-card__icon svg{width:24px;height:24px;color:var(--accent2)}
+.why-card h3{font-family:var(--font);font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:10px}
+.why-card p{font-size:.85rem;color:var(--text2);line-height:1.7}
+
 /* ---------- FAQ ---------- */
 .faq{padding:120px 0;background:var(--bg2)}
 .faq__list{max-width:680px;margin:0 auto}
@@ -178,7 +188,7 @@ em{font-style:normal;color:var(--accent2)}
 
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:900px){
-  .work__grid,.price__grid{grid-template-columns:repeat(2,1fr)}
+  .work__grid,.price__grid,.why__grid{grid-template-columns:repeat(2,1fr)}
   .price-card--pop{transform:none}.price-card--pop:hover{transform:translateY(-4px)}
   .go__wrap{grid-template-columns:1fr}
 }
@@ -187,7 +197,7 @@ em{font-style:normal;color:var(--accent2)}
   .nav__burger{display:block}
   .nav__links.open{display:flex;position:fixed;inset:0;background:rgba(8,8,13,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:28px;z-index:100}
   .nav__links.open a{font-size:1.2rem;color:var(--white)}
-  .work__grid,.price__grid,.numbers__grid{grid-template-columns:1fr}
+  .work__grid,.price__grid,.numbers__grid,.why__grid{grid-template-columns:1fr}
   .hero__actions{flex-direction:column;align-items:center}
   .hero__title{font-size:1.8rem}
   .tape__track{animation-duration:20s}

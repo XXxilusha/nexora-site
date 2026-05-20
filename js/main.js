@@ -32,7 +32,7 @@
 
   // Scroll reveal
   const reveals = document.querySelectorAll(
-    '.card, .step, .num-card, .price-card, .faq__item, .go__left, .go__form'
+    '.card, .step, .num-card, .price-card, .why-card, .faq__item, .go__left, .go__form'
   );
   reveals.forEach(el => el.setAttribute('data-reveal', ''));
   const io = new IntersectionObserver(entries => {
