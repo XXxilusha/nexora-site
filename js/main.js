@@ -67,6 +67,17 @@
   }, { threshold: 0.5 });
   if (counters.length) countObserver.observe(counters[0].closest('.numbers__grid'));
 
+  // Back to top
+  const toTop = document.getElementById('toTop');
+  if (toTop) {
+    window.addEventListener('scroll', () => {
+      toTop.classList.toggle('show', scrollY > 600);
+    }, { passive: true });
+    toTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // Form
   const form = document.getElementById('contactForm');
   if (form) {
